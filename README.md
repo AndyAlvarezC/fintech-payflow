@@ -1,69 +1,58 @@
-# React + TypeScript + Vite
+# 💳 FinTech Project - PayFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Descripción:**  
+Responsive landing page for a FinTech project, developed following **best coding practices and clean folder structure**. The project is currently in development: the **backend** and **user area** are not yet implemented.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Technologies
 
-## Expanding the ESLint configuration
+| Technology   | Usage                                           |
+|------------|-----------------------------------------------|
+| Vite       | Project setup and bundling                     |
+| React      | Components and UI                              |
+| TypeScript | Static typing and code safety                  |
+| TailwindCSS| Fast, responsive, and modern design           |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ⚡ Demo
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+[View live project](https://payflow-fintech.vercel.app/) 🌐  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💻 Quick Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone the repository:**
+```bash
+git clone https://github.com/AndyAlvarezC/fintech-payflow.git
+````
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2. **Enter the project folder:**
+```bash
+cd fintech-payflow/frontend
+`````
+
+3. **Install dependencies:**
+```bash
+npm install
+````
+
+4. **Start development server:**
+```bash
+npm run dev
+````
+
+5. **Open in browser:**
+```bash
+http://localhost:5173
+`````
+
+
+## ✨ Main Features
+
+- **Responsive landing page** with modern design  
+- **Clean folder structure** and best coding practices  
+- **Ready to integrate backend** and user area soon  
+- **Optimized for desktop and mobile devices**
