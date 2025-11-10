@@ -1,10 +1,10 @@
-import { Check, Star, ArrowRight } from "lucide-react";
-import { plans } from "../data/pricingData";
+import { Check, Star, ArrowRight } from 'lucide-react';
+import { plans } from '../../data/pricing';
 
 export default function PricingCard() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-12">
-      {" "}
+      {' '}
       {plans.map((plan, index) => {
         const IconComponent = plan.icon;
         return (
@@ -12,7 +12,7 @@ export default function PricingCard() {
             key={index}
             className={`relative rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 p-8 flex flex-col ${
               plan.color
-            } ${plan.popular ? "transform scale-105" : ""}`}
+            } ${plan.popular ? 'transform scale-105' : ''}`}
           >
             {plan.popular && (
               <div className="absolute -top-8 md:-top-4 left-1/2 transform -translate-x-1/2">
@@ -43,7 +43,7 @@ export default function PricingCard() {
             </div>
 
             <ul className="space-y-4 mb-8 flex-grow">
-              {" "}
+              {' '}
               {plan.features.map((feature, featureIndex) => (
                 <li key={featureIndex} className="flex items-start gap-3">
                   <div className="flex-shrink-0 w-6 h-6 bg-green-500/20 rounded-full flex items-center justify-center mt-0.5 border border-green-500/30">
@@ -57,7 +57,7 @@ export default function PricingCard() {
             </ul>
 
             <div className="mt-auto">
-              {" "}
+              {' '}
               <button
                 className={`w-full py-4 px-6 rounded-xl font-semibold text-center flex items-center justify-center gap-2 ${plan.buttonStyle} 
                 cursor-pointer focus:outline-none focus:ring-4 focus:ring-cyan-500/50`}
@@ -65,17 +65,17 @@ export default function PricingCard() {
                 {plan.cta}
                 <ArrowRight className="w-5 h-5" />
               </button>
-              {plan.name === "Gratis" && (
+              {plan.name === 'Gratis' && (
                 <p className="text-center text-sm text-slate-500 mt-4">
                   Sin tarjeta de crédito requerida
                 </p>
               )}
-              {plan.name === "Pro" && (
+              {plan.name === 'Pro' && (
                 <p className="text-center text-sm text-slate-500 mt-4">
                   Cancela en cualquier momento
                 </p>
               )}
-              {plan.name === "Empresa" && (
+              {plan.name === 'Empresa' && (
                 <p className="text-center text-sm text-slate-500 mt-4">
                   Implementación personalizada
                 </p>

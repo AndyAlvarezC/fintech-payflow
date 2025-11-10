@@ -1,5 +1,5 @@
-import { ArrowRight, Shield } from "lucide-react";
-import PricingCard from "../components/PricingCard";
+import { ArrowRight, Shield } from 'lucide-react';
+import PricingCard from '../components/ui/PricingCard';
 
 export default function Pricing() {
   return (

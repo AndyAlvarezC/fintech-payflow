@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 const CreditCard: React.FC = () => {
   return (
-    <div className="relative w-full max-w-4xl mx-auto h-96 flex items-center justify-center">
-      <div className="relative z-10 group">
+    <div className="relative w-full max-w-4xl mx-auto h-74 flex items-center justify-center">
+      <div className="flex z-10 group w-[90%] items-center justify-center text-center">
         <div className="relative w-72 h-44 perspective-1000">
           <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-slate-800 to-zinc-900 rounded-xl shadow-2xl border border-zinc-700/50 transform transition-all duration-700 hover:scale-105 hover:-translate-y-2">
             <div className="relative z-10 p-6 h-full flex flex-col justify-between">
@@ -61,7 +61,7 @@ const CreditCard: React.FC = () => {
       <div className="absolute top-24 right-1/3 w-1 h-1 bg-blue-400/60 rounded-full animate-pulse"></div>
       <div
         className="absolute bottom-28 left-1/3 w-1 h-1 bg-cyan-400/60 rounded-full animate-pulse"
-        style={{ animationDelay: "1s" }}
+        style={{ animationDelay: '1s' }}
       ></div>
 
       <div className="absolute inset-0 opacity-20">
@@ -76,11 +76,11 @@ const CreditCard: React.FC = () => {
             >
               <stop
                 offset="0%"
-                style={{ stopColor: "#3b82f6", stopOpacity: 0.3 }}
+                style={{ stopColor: '#3b82f6', stopOpacity: 0.3 }}
               />
               <stop
                 offset="100%"
-                style={{ stopColor: "#06b6d4", stopOpacity: 0.3 }}
+                style={{ stopColor: '#06b6d4', stopOpacity: 0.3 }}
               />
             </linearGradient>
           </defs>

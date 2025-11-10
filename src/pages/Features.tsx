@@ -1,12 +1,14 @@
-import HighlightsCard from "../components/FeaturesCard";
-import { AiOutlineSafety } from "react-icons/ai";
-import { IoRocketOutline } from "react-icons/io5";
-import { GoGraph } from "react-icons/go";
-import { CiGlobe } from "react-icons/ci";
+import { AiOutlineSafety } from 'react-icons/ai';
+import { IoRocketOutline } from 'react-icons/io5';
+import { GoGraph } from 'react-icons/go';
+import { CiGlobe } from 'react-icons/ci';
+
+import Section from '../components/ui/Section';
+import HighlightsCard from '../components/ui/featuresCards/FeaturesCard';
 
 export default function Highlights() {
   return (
-    <section id="features" className="pt-20 md:pt-48 flex flex-col md:flex-row md:w-[80%] md:m-auto items-center justify-center min-h-screen md:min-h-1/2 gap-6">
+    <Section id="features" className="gap-6 md:flex-row py-20 max-w-[85%] md:max-w-[95%]">
       <HighlightsCard
         icon={IoRocketOutline}
         title="Rápido"
@@ -27,6 +29,6 @@ export default function Highlights() {
         title="Siempre conectado"
         text="Disponible donde quieras, cuando quieras"
       />
-    </section>
+    </Section>
   );
 }
