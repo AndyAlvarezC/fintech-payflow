@@ -18,7 +18,7 @@ Responsive landing page for a FinTech project, developed following **best coding
 
 ## ⚡ Demo
 
-[View live project](https://payflow-fintech.vercel.app/) 🌐  
+[View live project](https://fintech-payflow.vercel.app/) 🌐  
 
 ---
 
